@@ -2,5 +2,5 @@
   'use strict';
 
   angular.module('starter')
-  .value('origin', 'https://zmnpvqmxff.localtunnel.me');
+  .value('origin', 'https://radiant-dawn-5043.herokuapp.com');
 })();
