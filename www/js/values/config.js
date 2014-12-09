@@ -2,5 +2,5 @@
   'use strict';
 
   angular.module('starter')
-  .value('origin', 'http://localhost:4227');
+  .value('origin', 'https://zmnpvqmxff.localtunnel.me');
 })();
