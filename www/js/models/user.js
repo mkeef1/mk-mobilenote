@@ -2,17 +2,17 @@
   'use strict';
 
   angular.module('starter')
-  .factory('User', ['$http', function($http){
+  .factory('User', function($http, origin){
 
 
     function login(user){
-      return $http.post('http://localhost:4227/login', user);
+      return $http.post(origin + '/login', user);
     }
 
     function logout(){
-      return $http.delete('http://localhost:4227/logout');
+      return $http.delete(origin + '/logout');
     }
 
     return {login:login, logout:logout};
-  }]);
+  });
 })();

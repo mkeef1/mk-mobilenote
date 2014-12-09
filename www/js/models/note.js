@@ -2,11 +2,11 @@
   'use strict';
 
   angular.module('starter')
-  .factory('Note', function($http){
+  .factory('Note', function($http, origin){
 
 
   function count(){
-    return $http.get('http://localhost:4227/notes/count');
+    return $http.get(origin + '/notes/count');
   }
 
   return {count:count};
