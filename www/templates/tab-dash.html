@@ -4,6 +4,15 @@
     <ion-view title="Dashboard">
       <ion-content class="padding">
         <h1>Dash</h1>
+        <button ng-click="logout()" class="button button-assertive">Logout</button>
+        <h3>{{rootuser.username}}</h3><img ng-src="{{rootuser.avatar}}">
+        <div class="list">
+          <div class="item">
+            <div class="item item-icon-left">
+              <div class="icon ion-clipboard"> </div>{{count}}
+            </div>
+          </div>
+        </div>
       </ion-content>
     </ion-view>
   </body>

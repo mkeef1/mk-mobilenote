@@ -3,3 +3,11 @@ html
     ion-view(title='Dashboard')
       ion-content.padding
         h1 Dash
+        button.button.button-assertive(ng-click='logout()') Logout
+        h3 {{rootuser.username}}
+        img(ng-src='{{rootuser.avatar}}')
+        .list
+          .item
+            .item.item-icon-left
+              .icon.ion-clipboard 
+              {{count}}

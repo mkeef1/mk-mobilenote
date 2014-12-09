@@ -9,7 +9,10 @@
       return $http.post('http://localhost:4227/login', user);
     }
 
+    function logout(){
+      return $http.delete('http://localhost:4227/logout');
+    }
 
-    return {login:login};
+    return {login:login, logout:logout};
   }]);
 })();
