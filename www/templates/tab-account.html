@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ion-view title="Account">
+      <ion-content class="padding">
+        <h1>Account</h1>
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="Username" ng-model="user.username">
+          </label>
+          <label class="list item-input">
+            <input type="text" placeholder="Password" ng-model="user.password">
+          </label>
+          <button ng-click="login(user)" class="button button-full button-positive">Submit</button>
+        </div>
+      </ion-content>
+    </ion-view>
+  </body>
+</html>

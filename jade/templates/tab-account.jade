@@ -1,0 +1,11 @@
+html
+  body
+    ion-view(title='Account')
+      ion-content.padding
+        h1 Account
+        .list
+          label.item.item-input
+            input(type='text', placeholder='Username', ng-model='user.username')
+          label.list.item-input
+            input(type='text', placeholder='Password', ng-model='user.password')
+          button.button.button-full.button-positive(ng-click='login(user)') Submit
