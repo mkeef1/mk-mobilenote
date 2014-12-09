@@ -6,7 +6,7 @@
 
 
     function login(user){
-      return $http.post('/login', user);
+      return $http.post('http://localhost:4227/login', user);
     }
 
 
