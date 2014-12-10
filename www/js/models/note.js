@@ -9,6 +9,9 @@
     return $http.get(origin + '/notes/count');
   }
 
-  return {count:count};
+  function query(tag, page){
+      return $http.get(origin + '/notes?limit=5&offset=' + 5 * page + '&tag=' + tag);
+    }
+  return {count:count, query:query};
   });
 })();
