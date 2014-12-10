@@ -60,11 +60,11 @@ angular.module('starter', ['ionic', 'starter.services'])
         }
       }
     })
-    .state('tab.notes-detail', {
-      url: '/note/:noteId',
+    .state('tab.notes-details', {
+      url: '/notes/:noteId',
       views: {
-        'tab-notesdetails': {
-          templateUrl: 'templates/tab-notesdetail.html',
+        'tab-notes': {
+          templateUrl: 'templates/notes-details.html',
           controller: 'NotesDetailsCtrl'
         }
       }
