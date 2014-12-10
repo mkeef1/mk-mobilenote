@@ -8,3 +8,5 @@ html
     ion-view(title='Notes-Details')
       ion-content(has-header='true', padding='true')
         h2 {{note.title}}
+        p {{note.body}}
+        img.item.item-thumbnail-left(ng-repeat='pic in note.urls', ng-src='{{pic}}')

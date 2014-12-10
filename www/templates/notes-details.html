@@ -10,6 +10,7 @@
     <ion-view title="Notes-Details">
       <ion-content has-header="true" padding="true">
         <h2>{{note.title}}</h2>
+        <p>{{note.body}}</p><img ng-repeat="pic in note.urls" ng-src="{{pic}}" class="item item-thumbnail-left">
       </ion-content>
     </ion-view>
   </body>
