@@ -16,6 +16,11 @@
   function show(noteId){
     return $http.get(origin + '/notes/' + noteId);
   }
-  return {count:count, query:query, show:show};
+
+  function savePhoto(pic, id){
+    return $http.post(origin + '/notes/save/' + id, {pic:pic});
+  }
+
+  return {count:count, query:query, show:show, savePhoto:savePhoto};
   });
 })();

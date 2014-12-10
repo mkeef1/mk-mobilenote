@@ -9,8 +9,10 @@
     -->
     <ion-view title="Notes-Details">
       <ion-content has-header="true" padding="true">
+        <button ng-click="snap()" class="button button-calm">Take Photo</button>
+        <button ng-click="choose()" class="button button-royal">Choose Photo</button>
         <h2>{{note.title}}</h2>
-        <p>{{note.body}}</p><img ng-repeat="pic in note.urls" ng-src="{{pic}}" class="item item-thumbnail-left">
+        <p>{{note.body}}</p><img ng-repeat="pic in note.urls" ng-src="{{pic}}">
       </ion-content>
     </ion-view>
   </body>
